@@ -1,0 +1,1 @@
+D:\1\78\AppCrud\AppCrud\AppCrud.csproj;x64

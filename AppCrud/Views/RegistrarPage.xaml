@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.RegistrarPage"
+             Title="RegistrarPage"
+             BackgroundColor="#F0F8FF" 
+    NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="PAGINA DE REGISTRO"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#4B0082" 
+            FontSize="24"
+            FontAttributes="Bold"/>
+
+            <Label 
+            Text="Usuario" x:Name="lblUsuario" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese su usuario" x:Name="txtUsuario" 
+               Margin="10" 
+               Text="{Binding User}" 
+             TextColor="#404040"/>
+
+            <Label 
+            Text="Contraseña" x:Name="lblContraseña" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese su contraseña" x:Name="txtContraseña" 
+               Margin="10" 
+               Text="{Binding Contraseña}" 
+               IsPassword="True" 
+               TextColor="#404040"/>
+
+                <Button Margin="10" Text="Registrar" x:Name="bntRegistrar" 
+                Clicked="btnRegistrar_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+
+                <Button Margin="10" Text="Volver" x:Name="btnVolver" 
+                Clicked="btnVolver_click" 
+                BackgroundColor="#2980B9" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.CategoriaPage"
+             Title="Nueva Categoría"
+             BackgroundColor="#F0F8FF">
+    <VerticalStackLayout BackgroundColor="#FFFFFF" Padding="10">
+        <Label 
+             Text="PAGINA DE REGISTRO DE CATEGORIAS"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             TextColor="#4B0082" />
+ 
+
+        <Label 
+             Text="CATEGORIA" x:Name="lblNombreProducto" Margin="10" 
+             TextColor="#4B0082"/>
+        <Entry Placeholder="El nombre de la categoría" x:Name="txtNombreProducto" 
+               Margin="10"
+               Text="{Binding NombreCategoria}"
+            TextColor="#000000"/>
+
+            <Label 
+               Text="DESCRIPCION" x:Name="lblDescripcionCategoria" Margin="10" 
+               TextColor="#4B0082"/>
+            <Entry Placeholder="Ingrese la descripción" x:Name="txtDescripcionCategoria" 
+               Margin="10"
+               Text="{Binding DescripcionCategoria}"
+                TextColor="#000000"/>
+              
+
+                <Button Margin="10" Text="GUARDAR CATEGORIA" x:Name="btnGuardarCategoria" 
+                Clicked="btnGuardarCategoria_click" 
+                BackgroundColor="#4B0082" TextColor="#FFFFFF"/>
+                <Button Margin="10" Text="LISTADO DE CATEGORIAS" x:Name="btnListadoCategoria" 
+                Clicked="btnListadoCategoria_click" 
+                BackgroundColor="#4B0082" TextColor="#FFFFFF"/>
+    </VerticalStackLayout>
+</ContentPage>

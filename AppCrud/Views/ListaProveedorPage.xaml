@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.ListaProveedorPage"
+             Title="Lista Proveedor">
+
+    <StackLayout BackgroundColor="#F0F8FF">
+        <Label 
+            Text="PAGINA DE REGISTRO DE PROVEEDORES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#4B0082" />
+
+        <ListView x:Name="ListaProveedor" SeparatorColor="#DCDCDC">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="20" VerticalOptions="Center" BackgroundColor="#FFFFFF">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" 
+                                         HorizontalOptions="Start" 
+                                         VerticalOptions="Center" 
+                                         Padding="20">
+                                <Label Text="{Binding NombreProveedor, StringFormat='Nombre: {0}'}" 
+                                       FontAttributes="Bold" 
+                                       TextColor="#4B0082" />
+                                <Label Text="{Binding TelefonoProveedor, StringFormat='Teléfono: {0}'}" 
+                                       TextColor="#7F8C8D" />
+                            </StackLayout>
+                            <Button Text="Eliminar"
+                                    BackgroundColor="#C0392B"  
+                                TextColor="White"
+                                    HorizontalOptions="End"
+                                    CommandParameter="{Binding IdProveedor}"
+                                    Clicked="btnEliminarProveedor_Click" 
+                                    Grid.Column="1" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Margin="10" Text="Volver" x:Name="btnVolver" Clicked="btnVolver_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

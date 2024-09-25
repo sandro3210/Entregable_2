@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.ProveedorPage"
+             Title="ProveedorPage"
+             BackgroundColor="#F0F8FF">
+
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="PAGINA DE REGISTRO DE PROVEEDORES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#4B0082" 
+            FontSize="24" 
+            FontAttributes="Bold"/>
+
+            <Label 
+            Text="NOMBRE DEL PROVEEDOR" x:Name="lblNombreProveedor" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="El nombre del proveedor" x:Name="txtNombreProveedor" 
+               Margin="10" 
+               Text="{Binding NombreProveedor}" 
+              TextColor="#404040"/>
+
+            <Label 
+            Text="TELEFONO DEL PROVEEDOR" x:Name="lblTelefonoProveedor" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese el teléfono" x:Name="txtTelefonoProveedor" 
+               Margin="10" 
+               Text="{Binding TelefonoProveedor}" 
+               TextColor="#404040"/>
+
+            <Button Margin="10" Text="GUARDAR PROVEEDOR" x:Name="btnGuardarProveedor" 
+                Clicked="btnGuardarProveedor_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+
+            <Button Margin="10" Text="LISTADO DE PROVEEDORES" x:Name="btnListadoProveedor" 
+                Clicked="btnListadoProveedor_click" 
+                BackgroundColor="#2980B9" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

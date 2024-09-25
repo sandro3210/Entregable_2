@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppCrud
+build_property.ProjectDir = D:\1\78\AppCrud\AppCrud\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/1/78/AppCrud/AppCrud/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/1/78/AppCrud/AppCrud/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/1/78/AppCrud/AppCrud/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/1/78/AppCrud/AppCrud/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/CategoriaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.CategoriaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CategoriaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CategoriaPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ListaCategoriaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ListaCategoriaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListaCategoriaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListaCategoriaPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ListaOrdenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ListaOrdenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListaOrdenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListaOrdenPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ListaProductosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ListaProductosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListaProductosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListaProductosPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ListaProveedorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ListaProveedorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ListaProveedorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ListaProveedorPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/OrdenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.OrdenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrdenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrdenPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ProductosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ProductosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductosPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/ProveedorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.ProveedorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProveedorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProveedorPage.xaml
+
+[D:/1/78/AppCrud/AppCrud/Views/RegistrarPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppCrud.Views.RegistrarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegistrarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegistrarPage.xaml

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.ProductosPage"
+             Title="ProductosPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F0F8FF">
+    
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="PAGINA DE REGISTRO DE PRODUCTOS"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#4B0082" 
+            FontSize="24" 
+            FontAttributes="Bold"/>
+
+            <Label 
+            Text="PRODUCTO" x:Name="lblNombreProducto" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="El nombre del producto" x:Name="txtNombreProducto" 
+               Margin="10" 
+               Text="{Binding NombreProducto}" 
+              TextColor="#404040"/>
+
+            <Label 
+            Text="CANTIDAD" x:Name="lblCantidadProducto" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese la cantidad" x:Name="txtCantidadProducto" 
+               Margin="10" 
+               Text="{Binding CantidadProducto}" 
+              TextColor="#404040"/>
+
+            <Label 
+            Text="PRECIO" x:Name="lblPrecioProducto" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese el precio" x:Name="txtPrecioProducto" 
+               Margin="10" 
+               Text="{Binding PrecioProducto}" 
+               TextColor="#404040"/>
+
+            <Button Margin="10" Text="GUARDAR PRODUCTO" x:Name="btnGuardarProducto" 
+                Clicked="btnGuardarProducto_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+
+            <Button Margin="10" Text="LISTADO DE PRODUCTOS" x:Name="btnListadoProductos" 
+                Clicked="btnListadoProductos_click" 
+                BackgroundColor="#2980B9" TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.ListaOrdenPage"
+             BackgroundColor="#F0F8FF">
+    <StackLayout BackgroundColor="#FFFFFF">
+        <Label 
+             Text="PAGINA DE REGISTRO DE ORDENES"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             TextColor="#4B0082" />
+
+        <ListView x:Name="ListaOrden" SeparatorColor="#DCDCDC">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="20" VerticalOptions="Center" BackgroundColor="#FFFFFF">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" 
+                                         HorizontalOptions="Start" 
+                                         VerticalOptions="Center" 
+                                         Padding="20">
+                                <Label Text="{Binding FechaOrden, StringFormat='Fecha: {0}'}" 
+                                       FontAttributes="Bold" 
+                                       TextColor="#4B0082" />
+                                <Label Text="{Binding ProductOrdenID, StringFormat='Product Orden ID: {0}'}" 
+                                       TextColor="Gray" />
+                            </StackLayout>
+                            <Button Text="Eliminar"
+                                    BackgroundColor="#C0392B" 
+                                TextColor="White"
+                                    HorizontalOptions="End"
+                                    CommandParameter="{Binding IdOrden}"
+                                    Clicked="btnEliminarOrden_Click" 
+                                    Grid.Column="1" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Margin="10" Text="Volver" x:Name="btnVolver" Clicked="btnVolver_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

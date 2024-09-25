@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F0F8FF">
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="LOGIN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#4B0082" 
+            FontSize="32" 
+            FontAttributes="Bold"/>
+
+            <Label 
+            Text="Usuario" x:Name="lblUsuario" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese su usuario" x:Name="txtUsuario" Margin="10" 
+               TextColor="#404040"/>
+
+            <Label 
+            Text="Contraseña" x:Name="lblContraseña" Margin="10" TextColor="#333333"/>
+            <Entry Placeholder="Ingrese su contraseña" x:Name="txtContraseña" Margin="10" 
+               IsPassword="True" 
+               TextColor="#404040"/>
+
+            <Button Margin="10" Text="Iniciar sesión" x:Name="bntIniciar" 
+                Clicked="btnIniciar_click" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+
+            <Button Margin="10" x:Name="bntRegistrar" 
+                Clicked="btnRegistrar_click" 
+                Text="Registrar" 
+                BackgroundColor="#4B0082" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

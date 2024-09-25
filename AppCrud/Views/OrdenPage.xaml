@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCrud.Views.OrdenPage"
+             Title="OrdenPage"
+             BackgroundColor="#F0F8FF">
+ 
+    <VerticalStackLayout BackgroundColor="#FFFFFF" Padding="10">
+        <Label 
+             Text="PAGINA DE REGISTRO DE ORDENES"
+             VerticalOptions="Center" 
+             HorizontalOptions="Center" 
+             TextColor="#4B0082" />
+
+
+        <Label 
+             Text="FECHA DE ORDEN" x:Name="lblFechaOrden" Margin="10"
+             TextColor="#4B0082"/>
+        <Entry Placeholder="El nombre del producto" x:Name="txtFechaOrden" 
+               Margin="10"
+               Text="{Binding FechaOrden}"
+               PlaceholderColor="#A9A9A9" 
+            TextColor="#000000"/>
+  
+
+            <Label 
+               Text="ProductOrdenID" x:Name="lblProductOrdenID" Margin="10"
+               TextColor="#4B0082"/>
+            <Entry Placeholder="Ingrese el ProductOrdenID" x:Name="txtProductOrdenID" 
+               Margin="10"
+               Text="{Binding ProductOrdenID}"
+               PlaceholderColor="#A9A9A9" 
+                TextColor="#000000"/>
+              
+
+                <Button Margin="10" Text="GUARDAR ORDEN" x:Name="btnGuardarOrden" Clicked="btnGuardarOrden_click" 
+                BackgroundColor="#4B0082" TextColor="#FFFFFF"/>
+               
+                <Button Margin="10" Text="LISTADO DE ORDENES" x:Name="btnListadoOrden" Clicked="btnListadoOrden_click" 
+                BackgroundColor="#4B0082" TextColor="#FFFFFF"/>
+         
+    </VerticalStackLayout>
+</ContentPage>
